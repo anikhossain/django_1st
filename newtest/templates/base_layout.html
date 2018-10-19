@@ -8,11 +8,14 @@
     <header>
       <nav>
         <ul>
-          <li>Signup</li>
+          <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
           <li>Login</li>
         </ul>
       </nav>
     </header>
+    {% block content %}
+
+    {% endblock %}
 
   </body>
 </html>
